@@ -1,0 +1,182 @@
+﻿<Window
+    x:Class="FreelanceApp.Windows.ModeratorDashboardWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Панель модератора"
+    Width="900"
+    Height="600"
+    WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--  Верхняя панель  -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock
+                Grid.Column="0"
+                VerticalAlignment="Center"
+                FontSize="20"
+                FontWeight="Bold"
+                Text="Панель модератора" />
+
+            <StackPanel
+                Grid.Column="1"
+                HorizontalAlignment="Right"
+                Orientation="Horizontal">
+                <Button
+                    Width="100"
+                    Margin="6"
+                    Click="AscDesc_Click"
+                    Content="asc/desc" />
+                <Button
+                    Width="100"
+                    Margin="6"
+                    Click="Refresh_Click"
+                    Content="Обновить" />
+                <Button
+                    Width="100"
+                    Margin="6"
+                    Click="Logout_Click"
+                    Content="Выйти" />
+            </StackPanel>
+        </Grid>
+
+        <!--  Кнопки фильтрации  -->
+        <StackPanel
+            Grid.Row="1"
+            Margin="0,10,0,0"
+            HorizontalAlignment="Center"
+            Orientation="Horizontal">
+            <Button
+                Margin="5"
+                Click="FilterAll_Click"
+                Content="Все" />
+            <Button
+                Margin="5"
+                Click="FilterNew_Click"
+                Content="New" />
+            <Button
+                Margin="5"
+                Click="FilterInProgress_Click"
+                Content="In Progress" />
+            <Button
+                Margin="5"
+                Click="FilterResolved_Click"
+                Content="Resolved" />
+            <Button
+                Margin="5"
+                Click="FilterDismissed_Click"
+                Content="Dismissed" />
+        </StackPanel>
+
+        <!--  Жалобы  -->
+        <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
+            <ItemsControl x:Name="ComplaintsList" Margin="0,10,0,0">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border
+                            Margin="5"
+                            Padding="10"
+                            BorderBrush="Gray"
+                            BorderThickness="1"
+                            CornerRadius="5">
+                            <StackPanel>
+
+                                <!--  Статус  -->
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock
+                                        FontSize="14"
+                                        FontWeight="Bold"
+                                        Foreground="DarkRed"
+                                        Text="{Binding Status}" />
+                                    <TextBlock
+                                        Margin="20,0,0,0"
+                                        FontSize="14"
+                                        FontWeight="Bold"
+                                        Text="{Binding Id_Complaint}" />
+                                </StackPanel>
+
+
+                                <!--  Информация о сторонах  -->
+                                <StackPanel Margin="0,5,0,0">
+                                    <TextBlock>
+                                        <Run Text="Жалоба на: " />
+                                        <Run FontWeight="Bold" Text="{Binding UserComName}" />
+                                    </TextBlock>
+                                    <TextBlock>
+                                        <Run Text="Отправитель: " />
+                                        <Run FontWeight="Bold" Text="{Binding FiledByName}" />
+                                    </TextBlock>
+                                </StackPanel>
+
+                                <!--  Описание  -->
+                                <TextBlock
+                                    Margin="0,5,0,0"
+                                    Text="{Binding Description}"
+                                    TextWrapping="Wrap" />
+
+                                <!--  Кнопки действий  -->
+                                <StackPanel
+                                    Name="ButtonsPanel"
+                                    Margin="0,10,0,0"
+                                    HorizontalAlignment="Right"
+                                    Orientation="Horizontal">
+                                    <Button
+                                        Width="100"
+                                        Margin="0,0,5,0"
+                                        Click="ResolveComplaint_Click"
+                                        Content="Решить"
+                                        Tag="{Binding}" />
+
+                                    <Button
+                                        Width="100"
+                                        Margin="0,0,5,0"
+                                        Click="EditStatus_Click"
+                                        Content="Изменить статус"
+                                        Tag="{Binding}" />
+
+                                    <Button
+                                        Width="100"
+                                        Click="DeleteComplaint_Click"
+                                        Content="Удалить"
+                                        Tag="{Binding}" />
+                                </StackPanel>
+
+                                <StackPanel
+                                    x:Name="WarningPanel"
+                                    Margin="0,10,0,0"
+                                    HorizontalAlignment="Right"
+                                    Orientation="Horizontal"
+                                    Visibility="Collapsed">
+                                    <Button
+                                        Width="140"
+                                        Click="IssueWarning_Click"
+                                        Content="Выдать предупреждение"
+                                        Tag="{Binding}" />
+                                </StackPanel>
+
+                            </StackPanel>
+                        </Border>
+
+                        <!--  Скрыть кнопку, если жалоба уже решена  -->
+                        <DataTemplate.Triggers>
+                            <DataTrigger Binding="{Binding Status}" Value="resolved">
+                                <Setter TargetName="ButtonsPanel" Property="Visibility" Value="Collapsed" />
+                                <Setter TargetName="WarningPanel" Property="Visibility" Value="Visible" />
+                            </DataTrigger>
+                        </DataTemplate.Triggers>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</Window>

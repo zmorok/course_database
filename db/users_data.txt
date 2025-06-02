@@ -1,0 +1,11 @@
+svc_mod  - INHERIT - app_mod_usr | 'svc_mod_usr_125634'
+svc_user - INHERIT - app_end_usr | 'svc_end_usr_125634'
+svc_admin | 'svc_admin_125634'
+svc_app   | 'svc_app_password' 
+
+по итогу:
+- у меня есть svc_admin (логин + роль), которая является админом бд, который создаёт все объекты бд
+
+- app_end_usr, app_mod_usr (логины), которые являются логинами для мод/юзер приложений
+
+- svc_mod, svc_user (роли), которые являются ролями в бд без логина, у них нет прав, кроме выполнения ряда процедур

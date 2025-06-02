@@ -1,0 +1,20 @@
+﻿FreelanceApp
+
+
+winexe
+C#
+.cs
+D:\Programming\Course's projects\course_2_2\app\FreelanceApp\obj\Debug\net9.0-windows\
+FreelanceApp
+none
+false
+TRACE;DEBUG;NET;NET9_0;NETCOREAPP
+D:\Programming\Course's projects\course_2_2\app\FreelanceApp\App.xaml
+291652029948
+
+302129501541
+225-2104878173
+Authentication\LoginWindow.xaml;Authentication\RegisterWindow.xaml;Authentication\StartupWindow.xaml;Strings\Strings.en.xaml;Strings\Strings.ru.xaml;Styles\AuthenticationStyles.xaml;Styles\Brushes\Brushes_BLACK.xaml;Styles\Brushes\Brushes_WHITE.xaml;Styles\DialogWindowsStyles.xaml;Styles\MainWindowStyles.xaml;Styles\Styles.xaml;Styles\ViewsStyles.xaml;Windows\AdminControls\AuditLogsControl.xaml;Windows\AdminControls\ImportExportControl.xaml;Windows\AdminControls\RawSqlControl.xaml;Windows\AdminControls\ReportControl.xaml;Windows\AdminControls\RolesManagementControl.xaml;Windows\AdminControls\UserManagementControl.xaml;Windows\AdminDashboardWindow.xaml;Windows\ModeratorControls\IssueWarningWindow.xaml;Windows\ModeratorDashboardWindow.xaml;Windows\UserControls\ComplaintsControl.xaml;Windows\UserControls\FreelancerSearchControl.xaml;Windows\UserControls\OrdersControl.xaml;Windows\UserControls\PortfolioControl.xaml;Windows\UserControls\ProfileControl.xaml;Windows\UserControls\ProjectsControl.xaml;Windows\UserControls\ReviewsControl.xaml;Windows\UserDashboardWindow.xaml;
+
+False
+

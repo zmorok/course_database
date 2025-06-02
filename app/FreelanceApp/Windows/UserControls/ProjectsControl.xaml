@@ -1,0 +1,150 @@
+﻿<UserControl
+    x:Class="FreelanceApp.Windows.UserControls.ProjectsControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:FreelanceApp.Windows.UserControls"
+    Width="Auto"
+    Height="Auto">
+
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+    </UserControl.Resources>
+
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Margin="0,0,10,0">
+            <Button
+                Margin="0,0,0,5"
+                Click="OnAddClick"
+                Content="Добавить" />
+            <Button
+                Margin="0,0,0,5"
+                Click="OnUpdateClick"
+                Content="Обновить" />
+            <Button
+                Margin="0,0,0,5"
+                Click="OnDeleteClick"
+                Content="Удалить" />
+            <Button
+                Name="ToggleMineButton"
+                Margin="0,10,0,5"
+                Click="OnToggleMineClick"
+                Content="Показать только мои" />
+
+            <TextBlock Margin="0,10,0,0" Text="Фильтр по статусу:" />
+            <ComboBox
+                x:Name="StatusFilterComboBox"
+                Margin="0,0,0,5"
+                SelectionChanged="OnStatusFilterChanged">
+                <ComboBoxItem
+                    Content="Все"
+                    IsSelected="True"
+                    Tag="" />
+                <ComboBoxItem Content="Черновик" Tag="draft" />
+                <ComboBoxItem Content="Открыт" Tag="open" />
+                <ComboBoxItem Content="В прогрессе" Tag="in_progress" />
+                <!--<ComboBoxItem Content="Выполнен" Tag="completed" />-->
+                <!--<ComboBoxItem Content="Отменён" Tag="cancelled" /> -->
+            </ComboBox>
+
+            <StackPanel
+                x:Name="FormPanel"
+                Margin="0,10,0,0"
+                Visibility="Collapsed">
+                <TextBlock Text="Название:" />
+                <TextBox x:Name="TitleBox" Margin="0,0,0,5" />
+                <TextBlock Text="Описание:" />
+                <TextBox
+                    x:Name="DescriptionBox"
+                    MinHeight="60"
+                    Margin="0,0,0,5"
+                    AcceptsReturn="True"
+                    TextWrapping="Wrap"
+                    VerticalScrollBarVisibility="Auto" />
+
+                <TextBlock Text="Статус:" />
+                <ComboBox x:Name="StatusComboBox" Margin="0,0,0,5">
+                    <ComboBoxItem Content="Черновик" DataContext="draft" />
+                    <ComboBoxItem Content="Открыт" DataContext="open" />
+                    <ComboBoxItem Content="В прогрессе" DataContext="in_progress" />
+                    <!--<ComboBoxItem Content="Выполнен" DataContext="completed" />>-->
+                    <!--<ComboBoxItem Content="Отменён" DataContext="cancelled" />>-->
+                </ComboBox>
+                <TextBlock Text="Медиа (JSON):" />
+                <TextBox
+                    x:Name="MediaBox"
+                    MinHeight="40"
+                    Margin="0,0,0,5"
+                    AcceptsReturn="True"
+                    VerticalScrollBarVisibility="Auto" />
+                <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                    <Button
+                        Width="100"
+                        Margin="0,5,5,0"
+                        Click="OnSaveClick"
+                        Content="Сохранить" />
+                    <Button
+                        Width="100"
+                        Margin="0,5,0,0"
+                        Click="OnCancelClick"
+                        Content="Отмена" />
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+        <ScrollViewer Grid.Column="1">
+            <ItemsControl x:Name="ProjectsItemsControl">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border
+                            Width="250"
+                            Margin="5"
+                            Padding="10"
+                            BorderBrush="Gray"
+                            BorderThickness="1"
+                            MouseLeftButtonUp="OnProjectSelect"
+                            Tag="{Binding Project}">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="Background" Value="#EEE" />
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsMine}" Value="True">
+                                            <Setter Property="Background" Value="#DFFFD6" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                            <StackPanel>
+                                <TextBlock FontWeight="Bold" Text="{Binding Project.Title}" />
+                                <TextBlock
+                                    MaxHeight="100"
+                                    Text="{Binding Project.Description}"
+                                    TextTrimming="CharacterEllipsis"
+                                    TextWrapping="Wrap" />
+                                <TextBlock
+                                    FontSize="10"
+                                    Foreground="Gray"
+                                    Text="{Binding Status}" />
+                                <Button
+                                    Margin="0,5,0,0"
+                                    Click="OnRespondClick"
+                                    Content="Откликнуться"
+                                    Tag="{Binding Project}"
+                                    Visibility="{Binding ShowRespondButton, Converter={StaticResource BoolToVisibilityConverter}}" />
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

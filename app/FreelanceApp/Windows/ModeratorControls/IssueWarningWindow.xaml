@@ -1,0 +1,58 @@
+﻿<Window
+    x:Class="FreelanceApp.Windows.ModeratorControls.IssueWarningWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FreelanceApp.Windows.ModeratorControls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="IssueWarningWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock
+            FontSize="16"
+            FontWeight="Bold"
+            Text="Параметры предупреждения" />
+
+        <StackPanel Grid.Row="1" Margin="0,10,0,10">
+            <TextBlock>Сообщение:</TextBlock>
+            <TextBox
+                x:Name="MsgBox"
+                Height="80"
+                TextWrapping="Wrap" />
+
+            <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                <TextBlock VerticalAlignment="Center" Text="Срок (дней):" />
+                <TextBox
+                    x:Name="DaysBox"
+                    Width="40"
+                    Margin="5,0,20,0"
+                    Text="7" />
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel
+            Grid.Row="2"
+            HorizontalAlignment="Right"
+            Orientation="Horizontal">
+            <Button
+                Width="80"
+                Margin="0,0,10,0"
+                Click="Ok_Click"
+                Content="OK"
+                IsDefault="True" />
+            <Button
+                Width="80"
+                Click="Cancel_Click"
+                Content="Отмена"
+                IsCancel="True" />
+        </StackPanel>
+    </Grid>
+</Window>

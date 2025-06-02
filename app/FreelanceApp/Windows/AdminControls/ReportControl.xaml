@@ -1,0 +1,42 @@
+﻿<UserControl
+    x:Class="FreelanceApp.Windows.AdminControls.ReportControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="150"
+    d:DesignWidth="400"
+    mc:Ignorable="d">
+    <Border
+        Padding="10"
+        BorderBrush="LightGray"
+        BorderThickness="1"
+        CornerRadius="4">
+        <StackPanel Margin="8" Orientation="Vertical">
+            <TextBlock
+                FontSize="16"
+                FontWeight="Bold"
+                Text="Экспорт отчёта" />
+
+            <StackPanel
+                Margin="6"
+                VerticalAlignment="Center"
+                Orientation="Horizontal">
+                <TextBlock VerticalAlignment="Center" Text="Формат:" />
+                <ComboBox x:Name="FormatComboBox" Width="100">
+                    <ComboBoxItem Content="CSV" Tag="csv" />
+                    <ComboBoxItem Content="TXT" Tag="txt" />
+                    <ComboBoxItem Content="JSON" Tag="json" />
+                    <ComboBoxItem Content="HTML" Tag="html" />
+                </ComboBox>
+            </StackPanel>
+
+            <Button
+                x:Name="ExportButton"
+                Width="150"
+                HorizontalAlignment="Left"
+                Click="ExportButton_Click"
+                Content="Сохранить отчёт..." />
+        </StackPanel>
+    </Border>
+</UserControl>

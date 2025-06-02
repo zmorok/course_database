@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Programming\\Course\u0027s projects\\course_2_2\\app\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BC425BF2-652A-4A3C-A2DE-F6CD75F1DEA4}|FreelanceApp\\FreelanceApp.csproj|d:\\programming\\course\u0027s projects\\course_2_2\\app\\freelanceapp\\windows\\usercontrols\\profilecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BC425BF2-652A-4A3C-A2DE-F6CD75F1DEA4}|FreelanceApp\\FreelanceApp.csproj|solutionrelative:freelanceapp\\windows\\usercontrols\\profilecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC425BF2-652A-4A3C-A2DE-F6CD75F1DEA4}|FreelanceApp\\FreelanceApp.csproj|d:\\programming\\course\u0027s projects\\course_2_2\\app\\freelanceapp\\windows\\viewmodels\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC425BF2-652A-4A3C-A2DE-F6CD75F1DEA4}|FreelanceApp\\FreelanceApp.csproj|solutionrelative:freelanceapp\\windows\\viewmodels\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE96F261-28A1-498F-B94B-931B55654A19}|DAL\\DAL.csproj|d:\\programming\\course\u0027s projects\\course_2_2\\app\\dal\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE96F261-28A1-498F-B94B-931B55654A19}|DAL\\DAL.csproj|solutionrelative:dal\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC425BF2-652A-4A3C-A2DE-F6CD75F1DEA4}|FreelanceApp\\FreelanceApp.csproj|d:\\programming\\course\u0027s projects\\course_2_2\\app\\freelanceapp\\authentication\\startupwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC425BF2-652A-4A3C-A2DE-F6CD75F1DEA4}|FreelanceApp\\FreelanceApp.csproj|solutionrelative:freelanceapp\\authentication\\startupwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC425BF2-652A-4A3C-A2DE-F6CD75F1DEA4}|FreelanceApp\\FreelanceApp.csproj|d:\\programming\\course\u0027s projects\\course_2_2\\app\\freelanceapp\\freelanceapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BC425BF2-652A-4A3C-A2DE-F6CD75F1DEA4}|FreelanceApp\\FreelanceApp.csproj|solutionrelative:freelanceapp\\freelanceapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE96F261-28A1-498F-B94B-931B55654A19}|DAL\\DAL.csproj|d:\\programming\\course\u0027s projects\\course_2_2\\app\\dal\\models\\views\\freelancerrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE96F261-28A1-498F-B94B-931B55654A19}|DAL\\DAL.csproj|solutionrelative:dal\\models\\views\\freelancerrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC425BF2-652A-4A3C-A2DE-F6CD75F1DEA4}|FreelanceApp\\FreelanceApp.csproj|d:\\programming\\course\u0027s projects\\course_2_2\\app\\freelanceapp\\services\\dbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC425BF2-652A-4A3C-A2DE-F6CD75F1DEA4}|FreelanceApp\\FreelanceApp.csproj|solutionrelative:freelanceapp\\services\\dbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC425BF2-652A-4A3C-A2DE-F6CD75F1DEA4}|FreelanceApp\\FreelanceApp.csproj|d:\\programming\\course\u0027s projects\\course_2_2\\app\\freelanceapp\\windows\\usercontrols\\profilecontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC425BF2-652A-4A3C-A2DE-F6CD75F1DEA4}|FreelanceApp\\FreelanceApp.csproj|solutionrelative:freelanceapp\\windows\\usercontrols\\profilecontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 201,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "D:\\Programming\\Course\u0027s projects\\course_2_2\\app\\DAL\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "DAL\\UnitOfWork.cs",
+              "ToolTip": "D:\\Programming\\Course\u0027s projects\\course_2_2\\app\\DAL\\UnitOfWork.cs",
+              "RelativeToolTip": "DAL\\UnitOfWork.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAF4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T20:58:42.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StartupWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Programming\\Course\u0027s projects\\course_2_2\\app\\FreelanceApp\\Authentication\\StartupWindow.xaml.cs",
+              "RelativeDocumentMoniker": "FreelanceApp\\Authentication\\StartupWindow.xaml.cs",
+              "ToolTip": "D:\\Programming\\Course\u0027s projects\\course_2_2\\app\\FreelanceApp\\Authentication\\StartupWindow.xaml.cs",
+              "RelativeToolTip": "FreelanceApp\\Authentication\\StartupWindow.xaml.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADwAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T19:33:21.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FreelanceApp",
+              "DocumentMoniker": "D:\\Programming\\Course\u0027s projects\\course_2_2\\app\\FreelanceApp\\FreelanceApp.csproj",
+              "RelativeDocumentMoniker": "FreelanceApp\\FreelanceApp.csproj",
+              "ToolTip": "D:\\Programming\\Course\u0027s projects\\course_2_2\\app\\FreelanceApp\\FreelanceApp.csproj",
+              "RelativeToolTip": "FreelanceApp\\FreelanceApp.csproj",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswCwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-26T19:33:11.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FreelancerRow.cs",
+              "DocumentMoniker": "D:\\Programming\\Course\u0027s projects\\course_2_2\\app\\DAL\\Models\\Views\\FreelancerRow.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Views\\FreelancerRow.cs",
+              "ToolTip": "D:\\Programming\\Course\u0027s projects\\course_2_2\\app\\DAL\\Models\\Views\\FreelancerRow.cs",
+              "RelativeToolTip": "DAL\\Models\\Views\\FreelancerRow.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T19:33:01.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProfileViewModel.cs",
+              "DocumentMoniker": "D:\\Programming\\Course\u0027s projects\\course_2_2\\app\\FreelanceApp\\Windows\\ViewModels\\ProfileViewModel.cs",
+              "RelativeDocumentMoniker": "FreelanceApp\\Windows\\ViewModels\\ProfileViewModel.cs",
+              "ToolTip": "D:\\Programming\\Course\u0027s projects\\course_2_2\\app\\FreelanceApp\\Windows\\ViewModels\\ProfileViewModel.cs",
+              "RelativeToolTip": "FreelanceApp\\Windows\\ViewModels\\ProfileViewModel.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAKwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T20:10:48.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProfileControl.xaml",
+              "DocumentMoniker": "D:\\Programming\\Course\u0027s projects\\course_2_2\\app\\FreelanceApp\\Windows\\UserControls\\ProfileControl.xaml",
+              "RelativeDocumentMoniker": "FreelanceApp\\Windows\\UserControls\\ProfileControl.xaml",
+              "ToolTip": "D:\\Programming\\Course\u0027s projects\\course_2_2\\app\\FreelanceApp\\Windows\\UserControls\\ProfileControl.xaml",
+              "RelativeToolTip": "FreelanceApp\\Windows\\UserControls\\ProfileControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-20T20:07:50.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DbContextFactory.cs",
+              "DocumentMoniker": "D:\\Programming\\Course\u0027s projects\\course_2_2\\app\\FreelanceApp\\Services\\DbContextFactory.cs",
+              "RelativeDocumentMoniker": "FreelanceApp\\Services\\DbContextFactory.cs",
+              "ToolTip": "D:\\Programming\\Course\u0027s projects\\course_2_2\\app\\FreelanceApp\\Services\\DbContextFactory.cs",
+              "RelativeToolTip": "FreelanceApp\\Services\\DbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T19:32:39.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProfileControl.xaml.cs",
+              "DocumentMoniker": "D:\\Programming\\Course\u0027s projects\\course_2_2\\app\\FreelanceApp\\Windows\\UserControls\\ProfileControl.xaml.cs",
+              "RelativeDocumentMoniker": "FreelanceApp\\Windows\\UserControls\\ProfileControl.xaml.cs",
+              "ToolTip": "D:\\Programming\\Course\u0027s projects\\course_2_2\\app\\FreelanceApp\\Windows\\UserControls\\ProfileControl.xaml.cs",
+              "RelativeToolTip": "FreelanceApp\\Windows\\UserControls\\ProfileControl.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T07:55:26.479Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 241,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

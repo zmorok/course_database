@@ -1,0 +1,52 @@
+﻿<UserControl
+    x:Class="FreelanceApp.Windows.AdminControls.ImportExportControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FreelanceApp.Windows.AdminControls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--  Панель кнопок  -->
+        <StackPanel
+            Margin="0,0,0,10"
+            HorizontalAlignment="Left"
+            Orientation="Horizontal">
+            <Button
+                x:Name="ExportButton"
+                Width="120"
+                Margin="0,0,10,0"
+                Click="ExportButton_Click"
+                Content="Экспорт БД" />
+            <Button
+                x:Name="ImportButton"
+                Width="120"
+                Click="ImportButton_Click"
+                Content="Импорт БД" />
+        </StackPanel>
+
+        <!--  Статистика операций  -->
+        <!--<GroupBox Grid.Row="1" Header="Статистика операций">
+            <DataGrid
+                x:Name="StatsDataGrid"
+                AutoGenerateColumns="False"
+                CanUserAddRows="False"
+                CanUserDeleteRows="False"
+                IsReadOnly="True"
+                ItemsSource="{Binding OperationStats}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding TableName}" Header="Таблица" />
+                    <DataGridTextColumn Binding="{Binding OperationType}" Header="Операция" />
+                    <DataGridTextColumn Binding="{Binding RowsAffected}" Header="Кол-во строк" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </GroupBox>-->
+    </Grid>
+</UserControl>

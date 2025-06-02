@@ -1,0 +1,14 @@
+D:\Programming\Course's projects\course_2_2\app\DAL\bin\Debug\net9.0\DAL.deps.json
+D:\Programming\Course's projects\course_2_2\app\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
+D:\Programming\Course's projects\course_2_2\app\DAL\bin\Debug\net9.0\DAL.dll
+D:\Programming\Course's projects\course_2_2\app\DAL\bin\Debug\net9.0\DAL.pdb
+D:\Programming\Course's projects\course_2_2\app\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+D:\Programming\Course's projects\course_2_2\app\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Course's projects\course_2_2\app\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+D:\Programming\Course's projects\course_2_2\app\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+D:\Programming\Course's projects\course_2_2\app\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+D:\Programming\Course's projects\course_2_2\app\DAL\obj\Debug\net9.0\DAL.dll
+D:\Programming\Course's projects\course_2_2\app\DAL\obj\Debug\net9.0\refint\DAL.dll
+D:\Programming\Course's projects\course_2_2\app\DAL\obj\Debug\net9.0\DAL.pdb
+D:\Programming\Course's projects\course_2_2\app\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
+D:\Programming\Course's projects\course_2_2\app\DAL\obj\Debug\net9.0\ref\DAL.dll

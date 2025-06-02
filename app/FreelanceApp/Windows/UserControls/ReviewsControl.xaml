@@ -1,0 +1,175 @@
+﻿<UserControl
+    x:Class="FreelanceApp.Windows.UserControls.ReviewsControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="600"
+    d:DesignWidth="900"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis" />
+    </UserControl.Resources>
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!--  - фильтр: я-заказчик / я-исполнитель  -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <TextBlock
+                Margin="0,0,10,0"
+                VerticalAlignment="Center"
+                Text="Показать заказы, где я:" />
+            <RadioButton
+                x:Name="AsCustomerRadio"
+                Margin="0,0,15,0"
+                Checked="ViewChanged"
+                Content="Заказчик"
+                GroupName="Mode"
+                IsChecked="True" />
+            <RadioButton
+                x:Name="AsFreelancerRadio"
+                Margin="0"
+                Checked="ViewChanged"
+                Content="Исполнитель"
+                GroupName="Mode" />
+        </StackPanel>
+
+        <!--  - список архив-заказов и (возможного) моего отзыва  -->
+        <ListView
+            x:Name="ArchiveList"
+            Grid.Row="1"
+            MouseDoubleClick="ArchiveList_DoubleClick"
+            SelectionMode="Single">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                </Style>
+            </ListView.ItemContainerStyle>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Border
+                        Margin="4"
+                        Padding="8"
+                        BorderBrush="LightGray"
+                        BorderThickness="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <!--  Левая колонка  -->
+                            <StackPanel>
+                                <!--  название проекта  -->
+                                <TextBlock FontWeight="Bold" Text="{Binding ProjectTitle}" />
+
+                                <!--  другой участник  -->
+                                <TextBlock FontSize="12" Foreground="Gray">
+                                    <Run Text="Другой участник: " />
+                                    <Run Text="{Binding OtherSideName}" />
+                                </TextBlock>
+
+                                <!--  мой отзыв  -->
+                                <StackPanel Margin="0,4,0,0" Orientation="Horizontal">
+                                    <TextBlock
+                                        FontWeight="SemiBold"
+                                        Foreground="DarkSlateBlue"
+                                        Text="Мой отзыв: " />
+                                    <TextBlock Text="{Binding MyCommentPreview, Mode=OneWay}" TextWrapping="Wrap" />
+                                    <TextBlock
+                                        Margin="6,0,0,0"
+                                        Foreground="DarkGoldenrod"
+                                        Text="{Binding MyRating, StringFormat='({0}/5)', TargetNullValue=''}" />
+                                </StackPanel>
+
+                                <!--  отзыв оппонента  -->
+                                <StackPanel Margin="0,2,0,0" Orientation="Horizontal">
+                                    <TextBlock
+                                        FontWeight="SemiBold"
+                                        Foreground="SlateGray"
+                                        Text="Отзыв оппонента: " />
+                                    <TextBlock Text="{Binding OppCommentPreview, Mode=OneWay}" TextWrapping="Wrap" />
+                                    <TextBlock
+                                        Margin="6,0,0,0"
+                                        Foreground="DarkGoldenrod"
+                                        Text="{Binding OppRating, StringFormat='({0}/5)', TargetNullValue=''}" />
+                                </StackPanel>
+                            </StackPanel>
+
+                            <!--  Правая колонка (кнопки) – всё без изменений  -->
+                            <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                                <Button
+                                    Width="90"
+                                    Margin="0,0,0,4"
+                                    Click="AddEdit_Click"
+                                    Content="{Binding EditButtonText}" />
+                                <Button
+                                    Width="90"
+                                    Click="Delete_Click"
+                                    Content="Удалить"
+                                    Visibility="{Binding DeleteButtonVisibility, Converter={StaticResource BoolToVis}}" />
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+
+        <!--  панель добавления / редактирования  -->
+        <Border
+            x:Name="EditPanel"
+            Grid.Row="2"
+            Padding="12"
+            Background="WhiteSmoke"
+            BorderBrush="Gray"
+            BorderThickness="1"
+            Visibility="Collapsed">
+            <StackPanel>
+                <TextBlock
+                    x:Name="PanelTitle"
+                    Margin="0,0,0,10"
+                    FontSize="15"
+                    FontWeight="Bold" />
+                <TextBlock Text="Оценка:" />
+                <ComboBox
+                    x:Name="RatingBox"
+                    Width="80"
+                    SelectedIndex="4">
+                    <ComboBoxItem Content="1" />
+                    <ComboBoxItem Content="2" />
+                    <ComboBoxItem Content="3" />
+                    <ComboBoxItem Content="4" />
+                    <ComboBoxItem Content="5" />
+                </ComboBox>
+                <TextBlock Margin="0,6,0,0" Text="Комментарий:" />
+                <TextBox
+                    x:Name="CommentBox"
+                    Height="60"
+                    TextWrapping="Wrap" />
+
+                <StackPanel
+                    Margin="0,10,0,0"
+                    HorizontalAlignment="Right"
+                    Orientation="Horizontal">
+                    <Button
+                        Width="100"
+                        Margin="0,0,6,0"
+                        Click="Save_Click"
+                        Content="Сохранить" />
+                    <Button
+                        Width="80"
+                        Click="Cancel_Click"
+                        Content="Отмена" />
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>
