@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 201,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,10 +51,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
@@ -66,8 +62,7 @@
               "RelativeToolTip": "DAL\\UnitOfWork.cs",
               "ViewState": "AgIAAEgAAAAAAAAAAAAAAF4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T20:58:42.044Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T20:58:42.044Z"
             },
             {
               "$type": "Document",
@@ -79,21 +74,19 @@
               "RelativeToolTip": "FreelanceApp\\Authentication\\StartupWindow.xaml.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAADwAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T19:33:21.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T19:33:21.353Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "FreelanceApp",
+              "Title": "FreelanceApp.csproj",
               "DocumentMoniker": "D:\\Programming\\Course\u0027s projects\\course_2_2\\app\\FreelanceApp\\FreelanceApp.csproj",
               "RelativeDocumentMoniker": "FreelanceApp\\FreelanceApp.csproj",
               "ToolTip": "D:\\Programming\\Course\u0027s projects\\course_2_2\\app\\FreelanceApp\\FreelanceApp.csproj",
               "RelativeToolTip": "FreelanceApp\\FreelanceApp.csproj",
               "ViewState": "AgIAABoAAAAAAAAAAAAswCwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-26T19:33:11.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T19:33:11.882Z"
             },
             {
               "$type": "Document",
@@ -105,8 +98,7 @@
               "RelativeToolTip": "DAL\\Models\\Views\\FreelancerRow.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T19:33:01.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T19:33:01.302Z"
             },
             {
               "$type": "Document",
@@ -118,8 +110,7 @@
               "RelativeToolTip": "FreelanceApp\\Windows\\ViewModels\\ProfileViewModel.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAAAKwAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T20:10:48.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T20:10:48.943Z"
             },
             {
               "$type": "Document",
@@ -143,8 +134,7 @@
               "RelativeToolTip": "FreelanceApp\\Services\\DbContextFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T19:32:39.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T19:32:39.776Z"
             },
             {
               "$type": "Document",
@@ -156,8 +146,7 @@
               "RelativeToolTip": "FreelanceApp\\Windows\\UserControls\\ProfileControl.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T07:55:26.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T07:55:26.479Z"
             }
           ]
         },

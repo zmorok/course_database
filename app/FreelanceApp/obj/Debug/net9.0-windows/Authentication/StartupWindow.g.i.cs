@@ -53,7 +53,7 @@ namespace FreelanceApp.Authentication {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FreelanceApp;V1.0.0.0;component/authentication/startupwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FreelanceApp;component/authentication/startupwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Authentication\StartupWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

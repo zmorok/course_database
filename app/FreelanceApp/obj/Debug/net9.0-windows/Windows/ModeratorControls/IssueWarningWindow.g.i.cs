@@ -69,8 +69,7 @@ namespace FreelanceApp.Windows.ModeratorControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FreelanceApp;V1.0.0.0;component/windows/moderatorcontrols/issuewarningwindow.xam" +
-                    "l", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FreelanceApp;component/windows/moderatorcontrols/issuewarningwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Windows\ModeratorControls\IssueWarningWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

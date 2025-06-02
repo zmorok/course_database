@@ -68,7 +68,7 @@ namespace FreelanceApp.Windows.AdminControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FreelanceApp;V1.0.0.0;component/windows/admincontrols/reportcontrol.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FreelanceApp;component/windows/admincontrols/reportcontrol.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Windows\AdminControls\ReportControl.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

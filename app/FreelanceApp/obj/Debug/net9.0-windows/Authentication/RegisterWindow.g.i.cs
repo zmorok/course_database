@@ -100,7 +100,7 @@ namespace FreelanceApp.Authentication {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FreelanceApp;V1.0.0.0;component/authentication/registerwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FreelanceApp;component/authentication/registerwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Authentication\RegisterWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -46,7 +46,6 @@ D:\Programming\Course's projects\course_2_2\app\FreelanceApp\bin\Debug\net9.0-wi
 D:\Programming\Course's projects\course_2_2\app\FreelanceApp\bin\Debug\net9.0-windows\System.Data.SqlClient.dll
 D:\Programming\Course's projects\course_2_2\app\FreelanceApp\bin\Debug\net9.0-windows\System.Drawing.Common.dll
 D:\Programming\Course's projects\course_2_2\app\FreelanceApp\bin\Debug\net9.0-windows\System.Private.Windows.Core.dll
-D:\Programming\Course's projects\course_2_2\app\FreelanceApp\bin\Debug\net9.0-windows\System.Text.Json.dll
 D:\Programming\Course's projects\course_2_2\app\FreelanceApp\bin\Debug\net9.0-windows\cs\Microsoft.CodeAnalysis.resources.dll
 D:\Programming\Course's projects\course_2_2\app\FreelanceApp\bin\Debug\net9.0-windows\de\Microsoft.CodeAnalysis.resources.dll
 D:\Programming\Course's projects\course_2_2\app\FreelanceApp\bin\Debug\net9.0-windows\es\Microsoft.CodeAnalysis.resources.dll
@@ -187,3 +186,4 @@ D:\Programming\Course's projects\course_2_2\app\FreelanceApp\obj\Debug\net9.0-wi
 D:\Programming\Course's projects\course_2_2\app\FreelanceApp\bin\Debug\net9.0-windows\DAL.dll
 D:\Programming\Course's projects\course_2_2\app\FreelanceApp\bin\Debug\net9.0-windows\DAL.pdb
 D:\Programming\Course's projects\course_2_2\app\FreelanceApp\bin\Debug\net9.0-windows\CommunityToolkit.Mvvm.dll
+D:\Programming\Course's projects\course_2_2\app\FreelanceApp\obj\Debug\net9.0-windows\FreelanceApp.sourcelink.json

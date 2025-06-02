@@ -109,7 +109,7 @@ namespace FreelanceApp.Windows {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FreelanceApp;V1.0.0.0;component/windows/userdashboardwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FreelanceApp;component/windows/userdashboardwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Windows\UserDashboardWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

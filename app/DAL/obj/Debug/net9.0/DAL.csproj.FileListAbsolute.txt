@@ -12,3 +12,4 @@ D:\Programming\Course's projects\course_2_2\app\DAL\obj\Debug\net9.0\refint\DAL.
 D:\Programming\Course's projects\course_2_2\app\DAL\obj\Debug\net9.0\DAL.pdb
 D:\Programming\Course's projects\course_2_2\app\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
 D:\Programming\Course's projects\course_2_2\app\DAL\obj\Debug\net9.0\ref\DAL.dll
+D:\Programming\Course's projects\course_2_2\app\DAL\obj\Debug\net9.0\DAL.sourcelink.json
