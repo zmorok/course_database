@@ -57,8 +57,6 @@ graph TD
 
 ## Скриншоты
 
-_(Добавьте свои скриншоты в папку `docs/screenshots` — GitHub отобразит их автоматически)_
-
 | Login                                | Dashboard                                    |
 | ------------------------------------ | -------------------------------------------- |
 | ![Login](docs/screenshots/login.png) | ![Dashboard](docs/screenshots/dashboard.png) |
